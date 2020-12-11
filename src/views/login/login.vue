@@ -104,6 +104,7 @@ export default {
         const result = await login(this.user)
         console.log(result)
         this.$toast.success('登录成功')
+        this.$router.push('/')
       } catch (e) {
         console.log(e)
         this.$toast.fail('登录失败，手机号或验证码错误')
